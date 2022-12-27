@@ -814,6 +814,10 @@ img {
     padding-left: 40px;
   }
 
+  .form-field:is(:hover, :focus){
+    border-color: var(--primary-color) !important;
+  }
+
   .form-field:is(:hover, :focus) + svg {
     fill: var(--primary-color);
     transition: border-color var(--transition-set);
