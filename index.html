@@ -480,13 +480,13 @@
                   </div>
                   <div class="footer-newsletter">
                     <h3>Zapisz się do newslettera</h3>
-                    <form>
-                      <input class="form-sub" type="email" name="subscribe" placeholder="E-mail" required>
-                    </form>
-                    <button class="button-subscribe" type="subscribe"><span class="sub-button-text">Zapisz się</span> 
-                      <svg class="icon-send-sub" width="24" height="24">
-                      <use href="./images/icons.svg#icon-send-sub"></use>
-                      </svg></button>
+                     <form class="sub-box">
+                        <input class="form-sub" type="email" name="subscribe" placeholder="E-mail" required>
+                        <button class="button-subscribe" type="submit"><span class="sub-button-text">Zapisz się</span> 
+                        <svg class="icon-send-sub" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send-sub"></use>
+                        </svg></button>
+                      </form>
                   </div>
               </div>    
         </footer>
@@ -498,23 +498,23 @@
             <button type="button" class="modal-close-btn" data-modal-close>&times;</button>
             <form class="form">
               <h2 class="title-form">Zostaw swoje dane w formularzu poniżej</h2>
-              <label><span class="field-name-form ">Imie</span></label>
+              <label class="field-name-form ">Imie</label>
               <input type="text" name="name" class="form-field" minlength="3" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$"/>
               <svg class="icon-form" width="12" height="12">
               <use href="./images/icons.svg#icon-name-form"></use>
               </svg>
             
-              <label><span class="field-name-form">Telefon</span></label>
+              <label class="field-name-form">Telefon</label>
               <input type="tel" name="telephone" class="form-field" minlength="9" required pattern="[0-9\+\-]{9,15}"/><svg class="icon-form" width="12" height="12">
               <use href="./images/icons.svg#icon-phone-form"></use>
               </svg>
             
-              <label><span class="field-name-form">Email</span></label>
+              <label class="field-name-form">Email</label>
               <input type="email" name="email" class="form-field" required/><svg class="icon-form" width="12" height="12">
               <use href="./images/icons.svg#icon-email-form"></use>
               </svg>
 
-              <label><span class="field-name-form">Komentarz</span></label>
+              <label class="field-name-form">Komentarz</label>
               <textarea placeholder="Wprowadź tekst" name="feedback" class="form-field-comment"></textarea>
 
 

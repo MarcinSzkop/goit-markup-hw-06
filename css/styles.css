@@ -677,6 +677,10 @@ img {
     margin-top: 12px;
 }
 
+.sub-box {
+    display: flex;
+}
+
 .footer-newsletter h3 {
     text-transform: uppercase;
     font-weight: 700;
@@ -709,6 +713,7 @@ img {
     border: none;
     border-radius: 4px;
     background-color: var(--primary-color);
+    margin-left: 12px;
 }
 
 .sub-button-text {
