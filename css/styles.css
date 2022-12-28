@@ -709,23 +709,24 @@ img {
 }
 
 .button-subscribe {
-    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     border: none;
     border-radius: 4px;
     background-color: var(--primary-color);
     margin-left: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px 28px 0px 42px;
+    gap: 24px;
 }
 
 .sub-button-text {
-    width: 82px;
-    height: 30px;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: var(--quaternary-color);
-    margin-right: 24px;
 }
 
 .button-subscribe:hover,
@@ -736,9 +737,7 @@ img {
 }
 
 .icon-send-sub {
-    position: absolute;
     fill: var(--quaternary-color);
-    margin-right: 28px;
 }
 
 /* MODAL */
@@ -762,11 +761,12 @@ img {
 .modal-box {
     position: relative;
     width: 528px;
-    height: 581px;
     border-radius: 4px;
     background-color: var(--quaternary-color);
     transition: transform 0.6s; 
     transition-timing-function: ease;
+    padding: 40px;
+    text-align: center;
 }
   
 .modal-close-btn {
@@ -800,7 +800,7 @@ img {
     line-height: 23px;
     color: var(--tertiary-color);
     text-align: center;
-    padding: 30px 40px 30px 40px;
+    margin-bottom: 30px;
 }
 
 .field-name-form {
@@ -810,25 +810,25 @@ img {
     line-height: 14px;
     color: var(--secundary-color);
     margin-bottom: 4px;
-    margin-left: 40px;
+    text-align: start;
 }
 
 .form-field {
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
-    margin-left: 40px;
     border: solid 1px;
     border-radius: 4px;
     border-color: rgba(33, 33, 33, 0.2);
     padding-left: 40px;
 }
 
-.form-field:is(:hover, :focus){
+.form-field:focus {
     border-color: var(--primary-color) !important;
+    outline: none;
 }
 
-.form-field:is(:hover, :focus) + svg {
+.form-field:focus + svg {
     fill: var(--primary-color);
     transition: border-color var(--transition-set);
 }
@@ -837,7 +837,6 @@ img {
     width: 448px;
     height: 120px;
     margin-bottom: 20px;
-    margin-left: 40px;
     border: solid 1px;
     border-radius: 4px;
     border-color: rgba(33, 33, 33, 0.2);
@@ -868,34 +867,47 @@ textarea {
 }
 
 .privacy-box {
-    display: block;
+    display: flex;
+    gap: 7px;
     margin-bottom: 30px;
     text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 14px;
 }
 
-.checkbox-form {
+.checkbox-wrapper {
+    position: relative;
+    width: 16px;
+}
+
+.checkbox-hidden {
    display: none;
 }
 
-.icon-checkbox {
+.checkbox-not-checked {
     position: absolute;
-    margin-left: -205px;
+    transform: translate(0%, -50%);
+    top: 0;
+    left: 0;
     opacity: 1;
 }
 
-.icon-check {
+.checkbox-checked{
     position: absolute;
-    margin-left: -205px;
+    transform: translate(0%, -50%);
+    top: 0;
+    left: 0;
     opacity: 0;
+    z-index: 1;
 }
 
-.icon-checkbox:checked + .icon-check {
+.checkbox-hidden:checked ~ .checkbox-checked {
     opacity: 1;
 }
 
-.icon-checkbox:is(:hover, :focus) {
-    cursor: pointer;
-    transition: var(--transition-set);
+.checkbox-hidden:checked + .checkbox-not-checked {
+    opacity: 0;
 }
 
 .text-privacy-form {
@@ -903,7 +915,6 @@ textarea {
     font-size: 14px;
     line-height: 24px;
     color: var(--secundary-color);
-    margin-left: 7px;
 }
 
 .text-privacy-form a {
@@ -913,8 +924,6 @@ textarea {
 .button-submit {
     width: 200px;
     height: 50px;
-    margin-left: 164px;
-    margin-right: 164px;
     background-color: var(--primary-color);
     color: var(--quaternary-color);
     border: none;
