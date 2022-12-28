@@ -728,6 +728,13 @@ img {
     margin-right: 24px;
 }
 
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color:  rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-set);
+    cursor: pointer;
+}
+
 .icon-send-sub {
     position: absolute;
     fill: var(--quaternary-color);
