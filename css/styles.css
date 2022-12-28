@@ -226,6 +226,7 @@ img {
     transform: scale(1.1);
     color: var(--primary-color) !important;
     background-color: var(--quaternary-color) !important;
+    transition: var(--transition-set);
 }
 
 
@@ -902,4 +903,5 @@ img {
   .button-submit:hover,
   .button-submit:focus {
     transform: scale(1.1);
+    transition: var(--transition-set);
 }
