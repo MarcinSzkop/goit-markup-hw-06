@@ -714,21 +714,23 @@ img {
     border-radius: 4px;
     background-color: var(--primary-color);
     margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .sub-button-text {
-    align-items: center;
     width: 82px;
     height: 30px;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
     color: var(--quaternary-color);
+    margin-right: 24px;
 }
 
 .icon-send-sub {
+    position: absolute;
     fill: var(--quaternary-color);
-    margin-left: 24px;
-    margin-top: 13px;
+    margin-right: 28px;
 }
 
 /* MODAL */
@@ -790,7 +792,7 @@ img {
     line-height: 23px;
     color: var(--tertiary-color);
     text-align: center;
-    padding: 40px 40px 30px 40px;
+    padding: 30px 40px 30px 40px;
   }
 
   .field-name-form {
@@ -896,3 +898,8 @@ img {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+
+  .button-submit:hover,
+  .button-submit:focus {
+    transform: scale(1.1);
+}
