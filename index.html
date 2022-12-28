@@ -518,9 +518,19 @@
               <textarea placeholder="Wprowadź tekst" name="feedback" class="form-field-comment"></textarea>
 
 
-              <label class="privacy-box"><input type="checkbox" name="checkbox-accept" class="checkbox-form"/>
+              <label class="privacy-box">
+                <div>
+                  <input type="checkbox" name="checkbox-accept" class="checkbox-form" value="agreed" required/>
+                  <svg width="16" height="15" class="icon-checkbox">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                  <svg
+                    width="16" height="15" class="icon-check">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </div>
                 <span class="text-privacy-form">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</span></a></label>
-              <button class="button-submit" type="submit">Wyślij</button>
+                <button class="button-submit" type="submit">Wyślij</button>
             </form>
           </div>
         </div>
