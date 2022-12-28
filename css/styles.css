@@ -889,7 +889,7 @@ textarea {
     opacity: 0;
 }
 
-.icon-checkbox:checked ~ .icon-check {
+.icon-checkbox:checked + .icon-check {
     opacity: 1;
 }
 
