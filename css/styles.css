@@ -220,13 +220,13 @@ img {
     background-color: var(--primary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition-property: transform, color, background-color; 
+    transition: var(--transition-set);
 }
 
 .slider button:hover {
     transform: scale(1.1);
     color: var(--primary-color) !important;
     background-color: var(--quaternary-color) !important;
-    transition: var(--transition-set);
 }
 
 
@@ -720,6 +720,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 0px 28px 0px 42px;
     gap: 24px;
+    transition: background-color var(--transition-set);
 }
 
 .sub-button-text {
@@ -732,7 +733,6 @@ img {
 .button-subscribe:hover,
 .button-subscribe:focus {
     background-color:  rgba(255, 255, 255, 0.1);
-    transition: background-color var(--transition-set);
     cursor: pointer;
 }
 
@@ -931,10 +931,10 @@ textarea {
     letter-spacing: 0.06em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: var(--transition-set);
 }
 
 .button-submit:hover,
 .button-submit:focus {
     transform: scale(1.1);
-    transition: var(--transition-set);
 }
